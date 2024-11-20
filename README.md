@@ -73,7 +73,7 @@ Shopping Cart
 
 Images of Shopping Cart
 
-![image alt](https://github.com/isiahveneracion/shopping-cart/blob/c7a72f8ac5b7734c0a786b17c3376dd9ed2d2dc9/images/1.png)
-![image alt](https://github.com/isiahveneracion/shopping-cart/blob/c7a72f8ac5b7734c0a786b17c3376dd9ed2d2dc9/images/2.png)
-![image alt](https://github.com/isiahveneracion/shopping-cart/blob/c7a72f8ac5b7734c0a786b17c3376dd9ed2d2dc9/images/3.png)
-![image alt](https://github.com/isiahveneracion/shopping-cart/blob/c7a72f8ac5b7734c0a786b17c3376dd9ed2d2dc9/images/4.png)
+![image alt](https://github.com/drainjesus/shopping-cart/blob/main/images/1.png)
+![image alt](https://github.com/drainjesus/shopping-cart/blob/main/images/2.png)
+![image alt](https://github.com/drainjesus/shopping-cart/blob/main/images/3.png)
+![image alt](https://github.com/drainjesus/shopping-cart/blob/main/images/4.png)
