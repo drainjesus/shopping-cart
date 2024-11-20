@@ -9,51 +9,32 @@ Just follow these steps:
 1. **Clone Repository**:
 
    ```bash
-   git clone https://github.com/isiahveneracion/shopping-cart.git
+   git clone https://github.com/drainjesus/shopping-cart.git
    ```
 
 -cd shopping-cart
 
--npm install\
+-npm install
 
 -npm start
 
-1. Browse Products
+1. **Browse Products**  
+   Visit http://localhost:3000 to explore available items.
 
-   Open the application in your web browser at http://localhost:3000.
-   Navigate through the product listings to view available items.
+2. **View Product Details**  
+   Click a product to see images, descriptions, prices, and options like size or color.
 
-2. View Product Details
+3. **Add to Cart**  
+   Select options if needed, then click "Add to Cart."
 
-   Click on a product to view its details, including images, descriptions, and prices.
-   If available, you may also see options for size, color, or quantity.
+4. **View Cart**  
+   Click "View Cart" to review items, adjust quantities, or remove products.
 
-3. Add to Cart
+5. **Checkout**  
+   Click "Checkout," log in or sign up if required, and review your order.
 
-   Select any options (like size or color) if applicable.
-   Click the "Add to Cart" button.
-
-4. View Cart
-
-   Click on the 'view cart button' to view your cart.
-   Review the items in your cart, including quantities and total price.
-   You can adjust quantities or remove items if needed.
-
-5. Proceed to Checkout
-
-   Click the "Checkout" button to proceed to the payment process.
-   You may be prompted to log in or create an account if you haven't already.
-
-6. Review Order Checkout
-
-   Review your order summary, including items, shipping address, and payment method.
-   Ensure everything is correct before proceeding.
-
-7. Complete Payment
-
-   Click the "Pay" button to finalize your order.
-   A confirmation message will appear saying "Payment successful!", indicating that your order has been successfully placed.
-
+6. **Complete Payment**  
+   Finalize payment to receive a "Payment successful!" confirmation.
 Shopping Cart
 
 ├── bootstrap
