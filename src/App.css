@@ -1,10 +1,16 @@
+/* General Styling */
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  margin-bottom: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,21 +19,37 @@
   }
 }
 
+/* Header Styles */
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100%;
+  flex-grow: 1;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Logo Spin Animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -37,12 +59,59 @@
   }
 }
 
-.header {
-  display: flex; /* Use flexbox for layout */
+/* Media Queries for Responsiveness */
 
-  justify-content: space-between; /* Space between elements */
+/* For Small Devices (Phones) */
+@media (max-width: 600px) {
+  .App-logo {
+    height: 30vmin; /* Smaller logo for smaller screens */
+    margin-bottom: 10px;
+  }
 
-  align-items: center; /* Center items vertically */
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Adjust font size for small screens */
+    padding: 15px;
+  }
 
-  margin-bottom: 20px; /* Add some margin below the header */
+  .header {
+    flex-direction: column; /* Stack header items on small screens */
+    justify-content: center;
+    padding: 15px;
+  }
+}
+
+/* For Medium Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .App-logo {
+    height: 35vmin; /* Adjust logo size */
+    margin-bottom: 15px;
+  }
+
+  .App-header {
+    font-size: calc(9px + 2vmin);
+    padding: 18px;
+  }
+
+  .header {
+    justify-content: space-between;
+    padding: 18px;
+  }
+}
+
+/* For Large Devices (Desktops) */
+@media (min-width: 1025px) {
+  .App-logo {
+    height: 40vmin; /* Larger logo for desktops */
+    margin-bottom: 20px;
+  }
+
+  .App-header {
+    font-size: calc(10px + 2vmin); /* Larger font size for desktop */
+    padding: 20px;
+  }
+
+  .header {
+    justify-content: space-between;
+    padding: 20px;
+  }
 }

@@ -1,24 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import productsData from "../data/products.json"; // Import the JSON file
 
 const Checkout = ({ cart, setCart }) => {
   const navigate = useNavigate();
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.escuelajs.co/api/v1/products")
-      .then((response) => response.json())
-      .then((data) => {
-        const filteredProducts = data.filter(
-          (product) =>
-            product.title &&
-            product.price &&
-            product.images &&
-            product.images.length > 0
-        );
-        setProducts(filteredProducts);
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+    // Use the local productsData instead of fetching from the API
+    const filteredProducts = productsData.filter(
+      (product) =>
+        product.title &&
+        product.price &&
+        product.images &&
+        product.images.length > 0
+    );
+    setProducts(filteredProducts);
   }, []);
 
   const totalAmount = cart.reduce(
@@ -31,12 +28,12 @@ const Checkout = ({ cart, setCart }) => {
 
   const handlePayment = () => {
     alert("Payment successful!");
-    setCart([]);
-    navigate("/");
+    setCart([]); // Clear cart after successful payment
+    navigate("/"); // Redirect to homepage after payment
   };
 
   const handleCancel = () => {
-    navigate("/");
+    navigate("/"); // Redirect to homepage if the user cancels
   };
 
   return (

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import productsData from "../data/products.json"; // Import the JSON file
 import "../styles/styles.css";
 
 const Cart = ({ cart, setCart }) => {
@@ -7,19 +8,15 @@ const Cart = ({ cart, setCart }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.escuelajs.co/api/v1/products")
-      .then((response) => response.json())
-      .then((data) => {
-        const filteredProducts = data.filter(
-          (product) =>
-            product.title &&
-            product.price &&
-            product.images &&
-            product.images.length > 0
-        );
-        setProducts(filteredProducts);
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+    // Load products from the JSON file
+    const filteredProducts = productsData.filter(
+      (product) =>
+        product.title &&
+        product.price &&
+        product.images &&
+        product.images.length > 0
+    );
+    setProducts(filteredProducts);
   }, []);
 
   const removeFromCart = (id) => {
